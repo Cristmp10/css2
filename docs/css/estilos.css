@@ -1,0 +1,98 @@
+/* SELECTOR UNIVERSAL= todo el estilo de la pagina cambia */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* estilo para etiqueta del encabezado */
+header {
+    background-color: rgb(113, 210, 246);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+/* estilos para el logo */
+.logo {
+    font-size: 20px;
+    color: azure;
+    font-weight: bold;
+}
+
+/* estilo para etiqueta nav que con contien un menu de navegacion */
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    position: relative;
+    float: left;
+
+}
+
+/* estilos para la etiqueta a dentro del li */
+.menu ul li a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    color: bisque;
+    display: block;
+
+
+}
+
+.menu ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Selector de tiqueta */
+body {
+    background-image: url(./itca.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+/* selector para dar estilos al main */
+main {
+    top: 80px;
+    background-color: rgba(255, 255, 255, 0.679);
+    box-shadow: 2px 5px 20px rgba(9, 64, 120, 0.98);
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+/* LETRA CAPITAL: Da estilo a la primera letra del parrafo */
+.letracapital::first-letter {
+    font-size: 50px;
+    font-weight: bold;
+    color: blue;
+    margin: 10px;
+
+
+}
+
+/* estilos para la section, article, h1, h2 */
+section article h1,
+section article h2 {
+    text-align: center;
+    border-bottom: 2px solid rgb(199, 187, 186);
+}
+
+/* estilo para los parrafos */
+section article p {
+    text-align: justify;
+    font-size: 20px;
+    margin: 20px;
+}
